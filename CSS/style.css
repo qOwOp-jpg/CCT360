@@ -19,7 +19,6 @@ body {
   position: relative;
 }
 
-/* Fixed visual area */
 .scene {
   position: fixed;
   inset: 0;
@@ -58,7 +57,6 @@ body {
   pointer-events: none;
 }
 
-/* Text box */
 .story-panel {
   position: absolute;
   left: 50%;
@@ -99,7 +97,6 @@ body {
   transform: translateY(12px);
 }
 
-/* Scroll sections */
 .story-step {
   position: relative;
   height: 100vh;
@@ -139,7 +136,6 @@ body {
   height: 140vh;
 }
 
-/* Final collapse atmosphere */
 .collapse-active .scene-image {
   transform: scale(1.12);
   filter: contrast(1.1) brightness(0.72);

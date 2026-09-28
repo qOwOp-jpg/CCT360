@@ -15,14 +15,12 @@ const observer = new IntersectionObserver(
       const newText = step.dataset.text;
       const newSpeaker = step.dataset.speaker || "";
 
-      // atmosphere switch for collapse sections
       if (step.classList.contains("collapse") || step.classList.contains("final-step")) {
         document.body.classList.add("collapse-active");
       } else {
         document.body.classList.remove("collapse-active");
       }
 
-      // fade text out
       storyText.classList.add("hidden");
       speaker.classList.add("hidden");
 
@@ -33,7 +31,6 @@ const observer = new IntersectionObserver(
         speaker.classList.remove("hidden");
       }, 220);
 
-      // change image if needed
       if (!currentImage.includes(newImage)) {
         sceneImage.style.opacity = "0";
 
@@ -66,7 +63,6 @@ function startBGM() {
             bgmStarted = true;
         })
         .catch(() => {
-            // Browser may still block playback
         });
 }
 
